@@ -1,0 +1,19 @@
+{
+  "Time already passed": "Czas upłynął",
+  "days_one": "dzień",
+  "days_two": "dni",
+  "days_few": "dni",
+  "days_many": "dni",
+  "hours_one": "godzina",
+  "hours_two": "godziny",
+  "hours_few": "godziny",
+  "hours_many": "godzin",
+  "minutes_one": "minuta",
+  "minutes_two": "minuty",
+  "minutes_few": "minuty",
+  "minutes_many": "minut",
+  "seconds_one": "sekund",
+  "seconds_two": "sekundy",
+  "seconds_few": "sekundy",
+  "seconds_many": "sekund"
+}
