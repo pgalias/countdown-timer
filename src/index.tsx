@@ -19,7 +19,6 @@ i18n
         },
         supportedLngs: ['en', 'pl'],
         fallbackLng: 'en',
-        debug: true,
     })
 
 const root = ReactDOM.createRoot(

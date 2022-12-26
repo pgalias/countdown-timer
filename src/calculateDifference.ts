@@ -15,12 +15,5 @@ export const calculateDifference = (date: Date) => {
     minutes %= 60;
     hours %= 24;
 
-    console.group();
-    console.log(seconds, 'seconds');
-    console.log(minutes, 'minutes');
-    console.log(hours, 'hours');
-    console.log(days, 'days');
-    console.groupEnd();
-
     return { days, seconds, minutes, hours };
 }

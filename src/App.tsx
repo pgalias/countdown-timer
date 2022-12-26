@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import {useQueryParams} from "./useQueryParams";
 import {useInterval} from "./useInterval";
 import {calculateDifference} from "./calculateDifference";
+import {TimerEntity} from "./TimerEntity";
 
 interface Time {
   seconds: number;
@@ -42,10 +43,10 @@ function App() {
       ) : (
           <div className="container">
             <ul className="flex mx-auto md:max-w-[40%] w-full justify-between list-none">
-              <li><p className="text-md"><strong className="text-3xl">{timeLeft?.days}</strong> {t('days', { count: timeLeft?.days })}</p></li>
-              <li><p className="text-md"><strong className="text-3xl">{timeLeft?.hours}</strong> {t('hours', { count: timeLeft?.hours })}</p></li>
-              <li><p className="text-md"><strong className="text-3xl">{timeLeft?.minutes}</strong> {t('minutes', { count: timeLeft?.minutes })}</p></li>
-              <li><p className="text-md"><strong className="text-3xl">{timeLeft?.seconds}</strong> {t('seconds', { count: timeLeft?.seconds })}</p></li>
+              <TimerEntity count={timeLeft?.days} translationKey="days" />
+              <TimerEntity count={timeLeft?.hours} translationKey="hours" />
+              <TimerEntity count={timeLeft?.minutes} translationKey="minutes" />
+              <TimerEntity count={timeLeft?.seconds} translationKey="seconds" />
             </ul>
             <img src="https://www.svgrepo.com/show/195110/clock.svg" alt="clock icon" className="w-[240px] mx-auto mt-10" />
           </div>
