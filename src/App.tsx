@@ -38,9 +38,9 @@ function App() {
         {title}
       </header>
       {isAfter ? (
-          <p>{t('Time already passed')}</p>
+          <p className="text-center">{t('Time already passed')}</p>
       ) : (
-          <>
+          <div className="container">
             <ul className="flex mx-auto md:max-w-[40%] w-full justify-between list-none">
               <li><p className="text-md"><strong className="text-3xl">{timeLeft?.days}</strong> {t('days', { count: timeLeft?.days })}</p></li>
               <li><p className="text-md"><strong className="text-3xl">{timeLeft?.hours}</strong> {t('hours', { count: timeLeft?.hours })}</p></li>
@@ -48,7 +48,7 @@ function App() {
               <li><p className="text-md"><strong className="text-3xl">{timeLeft?.seconds}</strong> {t('seconds', { count: timeLeft?.seconds })}</p></li>
             </ul>
             <img src="https://www.svgrepo.com/show/195110/clock.svg" alt="clock icon" className="w-[240px] mx-auto mt-10" />
-          </>
+          </div>
       )}
     </div>
   );
